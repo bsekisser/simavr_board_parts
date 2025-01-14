@@ -1,18 +1,8 @@
 project structure:
 
-PROJECT =
-PROJECT_ROOT = simavr_board_${PROJECT}
-PARTS_ROOT = simavr_board_parts
+simavr/
 
-${PROJECT_ROOT}/examples/
+simavr_board_fignition/
+	ln -s ../simavr .
 
-${PROJECT_ROOT}/examples/board_${PROJECT}/*
-
-${PROJECT_ROOT}/examples/parts/*
---> ${PROJECT_ROOT}/examples/parts/dtime/*
---> ${PROJECT_ROOT}/examples/parts/spi_flash/*
---> ${PROJECT_ROOT}/examples/parts/spi_sram/*
-
-ln -s ${SIMAVR_ROOT}/simavr ${PARTS_ROOT}/simavr
-ln -s ${SIMAVR_ROOT}/Makefile ${PARTS_ROOT}/Makefile
-ln -s ${SIMAVR_ROOT}/Makefile.common ${PARTS_ROOT}/Makefile.common
+simavr_board_parts/
